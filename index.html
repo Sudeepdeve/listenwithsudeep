@@ -1,525 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- APlayer CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
 
-    <title>SudeepSongVibes</title>
-    <style>
-    	body{
-    		background-color: #000000;
-    		font-family: Open sans;
-			
-    	}
-    	img{
-    		width: 100%;
-    		min-height: 250px;
-    	}
-    	.main{
-    		padding: 40px 0;
-    	}
-    	.col-md-3{
-    		margin-bottom: 40px;
-    	}
-    	.album-poster{
-    		position: relative;
-    		display: block;
-    		border-radius: 7px;
-    		overflow: hidden;
-    		box-shadow: 0 15px 35px #3d2173a1;
-    		transition: all ease 0.4s;
-    	}
-    	.album-poster:hover{
-    		box-shadow: none;
-    		transform: scale(0.98) translateY(5px);
-    	}
-    	h3{
-    		font-size: 34px;
-    		margin-bottom: 34px;
-    		border-bottom: 4px solid #e6e6e6;
-    		padding-bottom: 15px;
-			font-color:white;
-			text:bold;
-    	}
-    	p{
-    		font-size: 15px;
-    	}
-    	h4{
-    		font-size: 16px;
-    		text-transform: uppercase;
-    		margin-top: 15px;
-    		font-weight: 700;
-			font-color:white;
-    	}
-		
-
-		/*default is hide music player*/
-		#aplayer{
-			position: fixed;
-			bottom: -100%;
-			left: 0;
-			width: 100%;
-			margin: 0;
-			box-shadow: 0 -2px 2px #dadada;
-			background-color: #fff;
-			transition: all ease 0.5s;
-		}
-		#aplayer.showPlayer{
-			bottom: 0;
-		}
-
-		
-		/*MUSIC PLAYER CUSTOMIZING STYLE*/
-		span{
-			color: #000 !important;
-			font-size: 16px;
-		}
-		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
-			background: #e0e0e0;
-    		height: 4px;
-		}
-		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
-			height: 4px;
-			background-color: #2196F3 !important;
-		}
-		.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
-			background-color: #2196F3 !important;
-		}
-
-		.aplayer .aplayer-icon{
-			width: 20px;
-			height: 20px;
-		}
-		.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
-		    fill: #000;
-		}
-		.aplayer .aplayer-info .aplayer-music{
-			margin-bottom: 5px;
-		}
-.logo{
-	 align-items: right;
-	width: 200px;
-	height:200px;
-}
+	<title>Listen Sudeep
+	</title>
+</head>
+<body>
 
 
-    </style>
- 	</head>
-	<body>
-
-<div class="main">
-	<div class="container">
-		<div class="row">
-			<div class="logo">
-			<img style="float: right;"src="Sudeep.png" alt="">
-			</div>
-			<div class="col-md-12">
-				<h3></h3>
-			</div>
-			<div class="col-md-3">
-				<a href="javascript:void();" class="album-poster" data-switch="0">
-					<img  src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Listen Sudeep</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
 				</a>
-				<h4>AUR - TU HAI KAHAN </h4>
-				<p>Usama Ali</p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="1">
-					<img src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+			<li>
+				<a href="https://sudeepdeve.github.io/Guildliness-/">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Guildliness</span>
 				</a>
-				<h4>Chaar Diwar </h4>
-				<p>Samir Shrestha </p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="2">
-					<img src="https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+			<li>
+				<a href="https://sudeepdeve.github.io/hindi-songs-/">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Hindi</span>
 				</a>
-				<h4>Seven Years</h4>
-				<p></p>
-			</div>
-
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="3">
-					<img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+			<li>
+				<a href="https://sudeepdeve.github.io/nepali-songs-/">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Nepali</span>
 				</a>
-				<h4>Perfect</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="4">
-					<img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+			<li>
+				<a href=" https://sudeepdeve.github.io/english-songs/">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">English</span>
 				</a>
-				<h4>Paisa</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="5">
-					<img src="https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="https://forms.gle/icBQDnMyYnwE1guG9">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Feedback </span>
 				</a>
-				<h4>Ma nai to kon baa </h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="6">
-					<img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+			<li>
+				<a href="https://sudeepbio.netlify.app/" class="logout">
+					<i class=' bx bxs-group ' ></i>
+					<span class="text">Bio-Data</span>
 				</a>
-				<h4>5 Maina ma 50 Lakh </h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="7">
-					<img src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			</li>
+		</ul>
+	</section>
+
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="1.jpg">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="https://drive.google.com/file/d/1-voeqwnLkHTRwC_Lb0u46Evc3hb7asPS/view?usp=sharing" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download App</span>
 				</a>
-				<h4>Geet gauna man thiyo</h4>
-				<p></p>
 			</div>
 
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>207</h3>
+						<p>Downloads</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Visitors</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>Programmer</h3>
+						<p>Sudeep</p>
+					</span>
+				</li>
+			</ul>
 
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="8">
-					<img src="https://th.bing.com/th/id/R.85226f9237e1c7de48b1ba5eec8d8988?rik=QTu%2fYRMxs2vMWQ&pid=ImgRaw&r=0" alt="">
-				</a>
-				<h4>Maan na ko kamana</h4>
-				<p></p>
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Active Users</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>User</th>
+								<th>Date </th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="3.jpg">
+									<p>Darshan Tiwari</p>
+								</td>
+								<td>3-23-2024</td>
+								<td><span class="status completed">Active</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="2.jpg">
+									<p>Sudeep Lamichhane</p>
+								</td>
+								<td>3-23-2024</td>
+								<td><span class="status pending">Offline</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="4.jpg">
+									<p>Suman Dhunguna</p>
+								</td>
+								<td>3-23-2024</td>
+								<td><span class="status process">Offline</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="5.jpg">
+									<p>Rupam Gywali </p>
+								</td>
+								<td>3-23-2024</td>
+								<td><span class="status pending">Active</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="6.jpg">
+									<p>Bibek Giri </p>
+								</td>
+								<td>3-23-2024</td>
+								<td><span class="status completed">Active</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="7.jpg">
+									<p>khim Hang  </p>
+								</td>
+								<td>3-23-2024</td>
+								<td><span class="status completed">Active</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>Music Lists</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						<li class="completed">
+							<p>Hindi</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Nepali</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>English</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Vibes </p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Rap</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="9">
-					<img src="https://th.bing.com/th/id/OIP.3j_GFU3F5I4Ixkps73XGZQHaE8?rs=1&pid=ImgDetMain" alt="">
-				</a>
-				<h4>Mann na ko bhawana</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="10">
-					<img src="https://th.bing.com/th/id/R.097abbae57cd8e620ca0cdce11602df0?rik=BqlHAhwn7vBdwQ&riu=http%3a%2f%2flexlimbu.com%2fwp-content%2fuploads%2fNepal-Music-Festival-2018.jpg&ehk=vQ2QMRBeUoQf3Lv3gMNNB33bLrsTzl3VBDmzRxGuBtU%3d&risl=&pid=ImgRaw&r=0" alt="">
-				</a>
-				<h4>Pratiksha</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="11">
-					<img src="https://th.bing.com/th/id/OIP.7no26QNpLeTeHRrUrflwcAAAAA?rs=1&pid=ImgDetMain" alt="">
-				</a>
-				<h4>ka hunncha banara</h4>
-				<p></p>
-			</div>
-
-
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="12">
-					<img src="https://th.bing.com/th/id/OIP.A3aBBxyyHXHVu6bsHzIc4wHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="">
-				</a>
-				<h4>Maya gardina Ta Bhandina</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="13">
-					<img src="https://media.timeout.com/images/103279271/image.jpg" alt="">
-				</a>
-				<h4>Jhyal Bata</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="14">
-					<img src="https://people.com/thmb/dCn5SQ6_UmIMVwWsU8OjwGbAutg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/luke-bryan-show-Ethan-Helms-3-2000-809cdb7cbb5242b793338afba1eefef9.jpg" alt="">
-				</a>
-				<h4>Din Barbad bayo</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="15">
-					<img src="https://th.bing.com/th/id/OIP.J05IEsY9K1ayv5zGZJe-wAHaE8?w=1200&h=800&rs=1&pid=ImgDetMain" alt="">
-				</a>
-				<h4>Namo Namo sankara</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="16">
-					<img src="https://th.bing.com/th/id/OIP.8PAt2QPoL3TLgKudQlUWAgHaNK?w=720&h=1280&rs=1&pid=ImgDetMain" alt="">
-				</a>
-				<h4>Shiv tandav-Nepali</h4>
-				<p>Ashok Pandey</p>
-				
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="17">
-					<img src="https://th.bing.com/th/id/OIP.b84hdxiNaiGfVq7ac3dvkQHaMs?rs=1&pid=ImgDetMain" alt="">
-				</a>
-				<h4>Shiv tandav -Hindi</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="18">
-					<img src="https://i.pinimg.com/736x/70/3a/4a/703a4ac82b8f1c1f87ef5eb5af6f104e.jpg" alt="">
-				</a>
-				<h4>Char ro daam-Ram</h4>
-				<p></p>
-			</div>
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="19">
-					<img src="https://th.bing.com/th/id/R.8d7969739e05b542de5129e82b3e95ed?rik=MtxbBOkUNFqakg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-vxhfcW9xV4E%2fTVi6C7JYzPI%2fAAAAAAAAADo%2fuQz15oWJzkw%2fs1600%2fLord%2bkrishna%2bHigh%2bDefinition%2bDesktop%2bWallpapers.jpeg&ehk=7P04JRKt3UzD1afFNI1zmdXdfwujOe%2blnLrDw3KRItM%3d&risl=&pid=ImgRaw&r=0" alt="">
-				</a>
-				<h4>Hunna ra</h4>
-				<p></p>
-			</div>
-		
-			<div class="col-md-3">
-				<a href="#" class="album-poster" data-switch="20">
-					<img src="https://i.pinimg.com/originals/cc/08/c7/cc08c77cfdaf05db4c9772522d51d360.jpg" alt="">
-				</a>
-				<h4>Rato Ra chandra</h4>
-				<p>Amrit Gurung </p>
-			</div>
-			
-			
-			
-			
-		</div>
-
-
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Coming soon</h3>
-			</div>
-			<div class="col-md-2">
-				<a href="#" class="album-poster">
-					<img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-				</a>
-				<h4>AS</h4>
-			</div>
-			<div class="col-md-2">
-				<a href="#" class="album-poster">
-					<img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-				</a>
-				<h4> Your </h4>
-			</div>
-			<div class="col-md-2">
-				<a href="#" class="album-poster">
-					<img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-				</a>
-				<h4>Suggestion </h4>
-			</div>
-			
-			<div class="col-md-2">
-				<a href="#" class="album-poster">
-					<img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-				</a>
-				<h4>IN</h4>
-			</div>
-			<div class="col-md-2">
-				<a href="#" class="album-poster">
-					<img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-				</a>
-				<h4>Feedaback</h4>
-			</div>
-			<div class="col-md-2">
-				<a href="#" class="album-poster">
-					<img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-				</a>
-				<h4>Form</h4>
-			</div>
-		</div>
-
-
-	</div>
-</div>
-
-	<div id="aplayer"></div>
-
-	<!-- Jquery Link -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<!-- Bootstrap Link -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<!-- APlayer Jquery link -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
-
-	<script>
-
-
-		// NOW I CLICK album-poster TO GET CURRENT SONG ID
-		$(".album-poster").on('click', function(e){
-			var dataSwitchId = $(this).attr('data-switch');
-			//console.log(dataSwitchId);
-
-			// and now i use aplayer switch function see
-			ap.list.switch(dataSwitchId); //this is static id but i use dynamic 
-
-			// aplayer play function
-			// when i click any song to play
-			ap.play();
-
-			// click to slideUp player see
-			$("#aplayer").addClass('showPlayer');
-		});
-
-		const ap = new APlayer({
-		    container: document.getElementById('aplayer'),
-		    listFolded: true,
-		    audio: [
-		    {
-		        name: 'AUR - TU HAI KAHAN',
-		        artist: 'Usama Ali',
-		        url: 'invisible_beauty.mp3',
-		        cover: 'https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-		    },
-			{
-		        name: 'Chaar Diwar',  // SONG NAME
-		        artist: 'Samir Shrestha', //ARTIST NAME
-		        url: 'char diwar.mp3', // PATH NAME AND SONG URL
-		        cover: 'https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' // COVER IMAGE
-		    },
-			{
-				name: 'Seven Years',
-				artist: '',
-				url: 'seven years.mp3',
-				cover: 'https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: 'Perfect',
-				artist: '',
-				url: 'perfect.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},   
-
-
-			{
-				name: 'Paisa',
-				artist: '',
-				url: 'paisa.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: 'Ma Nai to kon ba',
-				artist: '',
-				url: 'ma nai to kon.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: '5 maina ma 50 lakh',
-				artist: '',
-				url: '5 maina ma 50 lakh.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: 'Geet Gau na man thiyo',
-				artist: '',
-				url: 'geet gau na mantho.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-
-
-			{
-				name: 'maan na ko kamana',
-				artist: '',
-				url: 'maan na ko kamana.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: 'mann na ko bhawana',
-				artist: '',
-				url: 'mann na ka bhawana.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: 'Pratiksha',
-				artist: '',
-				url: 'pratiksha.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: 'ka hunncha banara',
-				
-				url: 'Yo mutu.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-
-
-			{
-				name: 'Maya gardina Ta Bhandina',
-				
-				url: '1.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},	{
-				name: 'Jhyal Bata',
-				url: '2.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},	{
-				name: 'Din Barbad bayo',
-				url: '3.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},	
-			{
-
-				name: 'Namo Namo sankara',
-					url: '4.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},	{
-
-				name: 'Shiv tandav-Nepali',
-				
-				url: ' 7.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},	{
-				name: 'Shiv tandav -Hindi ',
-				
-				url: '6.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},	{
-				name: ' Char ro daam-Ram ',
-				
-				url: 'Mera ghar ram aaya ha.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
- 
-
-			{
-				name: ' Hunna ra ',
-				
-				url: 'Hunna ra.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			{
-				name: ' rato ra chandra surya  ',
-				
-				url: 'rato ra.mp3',
-				cover: 'https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-			},
-			
- ]
-
-		});
-	</script>
-	<br><br> <hr>
-	<style>
-        .custom-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;
-            cursor: pointer;
-            border: 2px solid #3498db;
-            color: #3498db;
-            background-color: #fff;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .custom-button:hover {
-            background-color: #3498db;
-            color: #fff;
-        }
-        
-    </style>
-<center>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
 	
-    <a href="https://forms.gle/1suoWUP1DkfVFanK9"class="custom-button">Feedaback</a>    
-</center>
-	</body>
+
+	<script src="script.js"></script>
+</body>
 </html>
